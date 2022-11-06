@@ -1,4 +1,5 @@
 {
+  "homepage": "https://a-basuony.github.io/Amazon-Clone/",
   "name": "amazone_clone",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.2.2",
     "firebase": "^8.4.1",
+    "gh-pages": "^4.0.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-currency-format": "^1.1.0",
@@ -23,6 +25,8 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
